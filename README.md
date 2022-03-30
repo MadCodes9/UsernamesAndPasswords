@@ -15,10 +15,11 @@ Project is created with
 * Language: C++20
 ## Setup
 To run this project use Microsoft Visual Studio or an IDE that supports C++20 and download the files.
-The password.txt file 
+The password.txt file is located in the Debug Folder and can be changed to different usernames and passwords. 
 ```
 $cd
-``
+```
+![image](/assets/images/your-image.jpg)
 ## Status 
 
 
