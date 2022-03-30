@@ -7,7 +7,24 @@ hash function stores the username in order to determine which bucket the usernam
 in. Collsions are handled by seperate chaining. Once all username/passwords are loaded from the file, a
 printout of the buckets are shown and the program prompts for a username and password combination, which
 checks the combination is corrects. The user than has the option to continue or exit the program.
-*Backend development*
+
+**Hash Function Used**
+```C++
+int HashTable::hashFunction(string username) {
+	int size = username.size() - 1;
+	int ascii = 0;
+	long long polynomial = 0;
+	int bucket = 0;
+
+	for (int i = 0; i < username.size(); i++) {	
+		ascii = (int)username[i];	
+		polynomial = polynomial + (ascii * (long long)pow(a, size));	
+		size--;
+	}
+	bucket = polynomial % 10;	
+	return bucket;
+}
+```
 ## Technologies
 Project is created with 
 * IDE: Microsoft Visual Studio 2019
@@ -15,16 +32,14 @@ Project is created with
 * Language: C++20
 ## Setup
 To run this project use Microsoft Visual Studio or an IDE that supports C++20 and download the files.
-The password.txt file is located in the Debug Folder and can be changed to different usernames and passwords. 
-```
-$cd
-```
-![image](/assets/images/your-image.jpg)
+The password.txt file is located in the Debug Folder and can be changed to different usernames and passwords.
+The user will be prompt to enter user name and password combo. 
+
+**Sample Output**
+
+![image](https://github.com/MadCodes9/UsernamesAndPasswords/blob/main/UP2.png)
 ## Status 
+This is a project created by @MadCodes9 :grinning:
 
+Source: *Data Structures and Algorithms in C++ 2nd Edition*
 
-    What the project does
-    Why the project is useful
-    How users can get started with the project
-    Where users can get help with your project
-    Who maintains and contributes to the project
