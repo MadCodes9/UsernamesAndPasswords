@@ -31,7 +31,7 @@ Project is created with
 * Version: 16.11.10
 * Language: C++20
 ## Setup
-To run this project use Microsoft Visual Studio or an IDE that supports C++20 and download the .cpp and .h files into your IDE..
+To run this project use Microsoft Visual Studio or an IDE that supports C++20 and download the .cpp and .h files into your IDE.
 The password.txt file is located in the Debug Folder and can be changed to different usernames and passwords.
 The user will be prompt to enter user name and password combo. 
 
